@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dte6bq2ce0omg"]
+[gd_scene load_steps=16 format=3 uid="uid://dte6bq2ce0omg"]
 
 [ext_resource type="Texture2D" uid="uid://c0lkl3c775shi" path="res://Tilemap/Texture/TX Tileset Grass.png" id="1_4ye7b"]
 [ext_resource type="PackedScene" uid="uid://bu3lygtreqhfa" path="res://Player.tscn" id="1_dsca6"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cwacfa4fn2x8m" path="res://Tilemap/Texture/TX Plant.png" id="2_kjdw1"]
 [ext_resource type="Texture2D" uid="uid://drtwu8npotrvl" path="res://Tilemap/Texture/TX Struct.png" id="5_rop4m"]
 [ext_resource type="Texture2D" uid="uid://vxm6uilh5m2v" path="res://Tilemap/Texture/TX Props.png" id="6_rbpih"]
+[ext_resource type="PackedScene" uid="uid://3xbvf40uen31" path="res://enemies/poulet/poulet.tscn" id="8_0xysn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f14o0"]
 texture = ExtResource("1_vunle")
@@ -4596,3 +4597,6 @@ layer_4/tile_data = PackedInt32Array(-983052, 655371, 2, -917516, 655371, 3, -85
 [node name="Player" parent="." instance=ExtResource("1_dsca6")]
 position = Vector2(-93, -17)
 scale = Vector2(1.24165, 1.23514)
+
+[node name="poulet" parent="." instance=ExtResource("8_0xysn")]
+position = Vector2(229, -46)
