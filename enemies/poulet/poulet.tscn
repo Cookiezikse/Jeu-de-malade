@@ -1,223 +1,102 @@
-[gd_scene load_steps=33 format=3 uid="uid://3xbvf40uen31"]
+[gd_scene load_steps=9 format=3 uid="uid://3xbvf40uen31"]
 
 [ext_resource type="Script" path="res://enemies/poulet/poulet.gd" id="1_3h5vx"]
+[ext_resource type="Texture2D" uid="uid://b7lrnjyn20rxc" path="res://enemies/poulet/Idle (32x34).png" id="2_hkpub"]
 [ext_resource type="Texture2D" uid="uid://mgt6d4dhl3s0" path="res://enemies/poulet/Run (32x34).png" id="3_djysc"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_61pxc"]
-atlas = ExtResource("3_djysc")
-region = Rect2(0, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_78dxd"]
-atlas = ExtResource("3_djysc")
-region = Rect2(32, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lqpfu"]
-atlas = ExtResource("3_djysc")
-region = Rect2(64, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d000n"]
-atlas = ExtResource("3_djysc")
-region = Rect2(96, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b5vij"]
-atlas = ExtResource("3_djysc")
-region = Rect2(128, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cmdhs"]
-atlas = ExtResource("3_djysc")
-region = Rect2(160, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pk86a"]
-atlas = ExtResource("3_djysc")
-region = Rect2(192, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2s88c"]
-atlas = ExtResource("3_djysc")
-region = Rect2(224, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e6yjd"]
-atlas = ExtResource("3_djysc")
-region = Rect2(256, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1rh0j"]
-atlas = ExtResource("3_djysc")
-region = Rect2(288, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_23lb5"]
-atlas = ExtResource("3_djysc")
-region = Rect2(320, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x7rfb"]
-atlas = ExtResource("3_djysc")
-region = Rect2(352, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2je62"]
-atlas = ExtResource("3_djysc")
-region = Rect2(384, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c30y1"]
-atlas = ExtResource("3_djysc")
-region = Rect2(416, 0, 32, 34)
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xx1k2"]
-load_path = "res://.godot/imported/Idle (32x34).png-041efd96cfa8d5194fde013c6f022887.ctex"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_23mub"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(0, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hyeih"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(32, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lndjv"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(64, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_odx0l"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(96, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oh65x"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(128, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i8q5q"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(160, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_dapel"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(192, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_05j0h"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(224, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ndlw0"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(256, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_av2hf"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(288, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fve44"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(320, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5177n"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(352, 0, 32, 34)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ot0rh"]
-atlas = SubResource("CompressedTexture2D_xx1k2")
-region = Rect2(384, 0, 32, 34)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_cj625"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_61pxc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_78dxd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lqpfu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d000n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b5vij")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cmdhs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pk86a")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2s88c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e6yjd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1rh0j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_23lb5")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x7rfb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2je62")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c30y1")
-}],
-"loop": true,
-"name": &"courir",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_23mub")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hyeih")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lndjv")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_odx0l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oh65x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i8q5q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_dapel")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_05j0h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ndlw0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_av2hf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fve44")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5177n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ot0rh")
-}],
-"loop": true,
-"name": &"sur_place",
-"speed": 15.0
-}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mhqwq"]
 radius = 6.0
 
-[node name="poulet" type="CharacterBody2D"]
-script = ExtResource("1_3h5vx")
+[sub_resource type="Animation" id="Animation_u0tlk"]
+resource_name = "idle"
+length = 1.3
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChickenIdle:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+}
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_cj625")
-animation = &"courir"
+[sub_resource type="Animation" id="Animation_olkrc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChickenIdle:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ChickenRun:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_2u01l"]
+resource_name = "run"
+length = 1.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ChickenRun:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8tr0j"]
+_data = {
+"RESET": SubResource("Animation_olkrc"),
+"idle": SubResource("Animation_u0tlk"),
+"run": SubResource("Animation_2u01l")
+}
+
+[node name="Poulet" type="CharacterBody2D"]
+script = ExtResource("1_3h5vx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 14)
 shape = SubResource("CircleShape2D_mhqwq")
+
+[node name="ChickenIdle" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_hkpub")
+hframes = 13
+
+[node name="ChickenRun" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_djysc")
+hframes = 14
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_8tr0j")
+}
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
