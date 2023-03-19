@@ -15,10 +15,11 @@ func _physics_process(delta):
 		move_and_slide()
 	
 func movement_loop():
-	#direction horizontale
+	
 	var horizontale = Input.get_axis("ui_left", "ui_right") 
 	var verticale = Input.get_axis("ui_up", "ui_down")
 	
+	#direction horizontale
 	if horizontale == 1:
 		velocity.x = horizontale * SPEED 
 		animation_loop("run")
@@ -29,7 +30,7 @@ func movement_loop():
 		$Sprite2D.flip_h = true
 		
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)	
+		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
 		
 	#direction verticale

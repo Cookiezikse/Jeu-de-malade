@@ -1,6 +1,6 @@
-[gd_scene load_steps=32 format=3 uid="uid://ch3f6cn2kad4a"]
+[gd_scene load_steps=32 format=3 uid="uid://cnw72jt0mvign"]
 
-[ext_resource type="Script" path="res://Player.gd" id="1_644bf"]
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_wu6x5"]
 [ext_resource type="Texture2D" uid="uid://bvm7g2jjhyyl6" path="res://Player/Warrior/SpriteSheet/Warrior_Sheet-Effect.png" id="2_rui5o"]
 [ext_resource type="Script" path="res://HitBox.gd" id="3_7awh4"]
 [ext_resource type="Script" path="res://HurtBox.gd" id="4_7y1ce"]
@@ -382,10 +382,11 @@ _data = {
 radius = 4.0
 height = 8.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_644bf")
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_wu6x5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 0)
 texture = ExtResource("2_rui5o")
 offset = Vector2(3, -4)
 hframes = 6
@@ -395,7 +396,7 @@ vframes = 17
 script = ExtResource("3_7awh4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/HitBox"]
-position = Vector2(19, 0)
+position = Vector2(12, 1)
 rotation = 0.314159
 shape = SubResource("CapsuleShape2D_nwk63")
 disabled = true
@@ -405,7 +406,7 @@ debug_color = Color(0.709804, 0.262745, 1, 0.419608)
 script = ExtResource("4_7y1ce")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/HurtBox"]
-position = Vector2(-5, 1)
+position = Vector2(-4, 0)
 shape = SubResource("CapsuleShape2D_02ah4")
 debug_color = Color(1, 0.0313726, 0, 0.419608)
 
@@ -418,5 +419,5 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5, 13)
+position = Vector2(0, 13)
 shape = SubResource("CapsuleShape2D_ftnei")

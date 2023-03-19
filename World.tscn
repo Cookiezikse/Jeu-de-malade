@@ -1,7 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://c2ep12ygevlj6"]
+[gd_scene load_steps=16 format=3 uid="uid://betn44vxjd8e1"]
 
 [ext_resource type="Texture2D" uid="uid://c0lkl3c775shi" path="res://Tilemap/Texture/TX Tileset Grass.png" id="1_4ye7b"]
-[ext_resource type="PackedScene" uid="uid://ch3f6cn2kad4a" path="res://Player.tscn" id="1_dsca6"]
+[ext_resource type="PackedScene" uid="uid://cnw72jt0mvign" path="res://Player.tscn" id="1_dsca6"]
 [ext_resource type="Texture2D" uid="uid://bdexuk04742kv" path="res://Tilemap/Texture/TX Tileset Stone Ground.png" id="1_vunle"]
 [ext_resource type="Texture2D" uid="uid://fmedce0r5d13" path="res://Tilemap/Texture/TX Tileset Wall.png" id="2_83xua"]
 [ext_resource type="Texture2D" uid="uid://cwacfa4fn2x8m" path="res://Tilemap/Texture/TX Plant.png" id="2_kjdw1"]
@@ -4769,6 +4769,7 @@ sources/2 = SubResource("TileSetAtlasSource_8t12o")
 sources/3 = SubResource("TileSetAtlasSource_ik162")
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(-21, 0)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_vrhbq")
@@ -4810,9 +4811,7 @@ layer_5/y_sort_origin = 0
 layer_5/z_index = 6
 layer_5/tile_data = PackedInt32Array(-327694, 1048579, 1, -262158, 1048579, 2, -196622, 1048579, 3, -327693, 1114115, 1, -262157, 1114115, 2, -196621, 1114115, 3, 262157, 1048579, 6, 327693, 1048579, 7, 393229, 1048579, 8, 458765, 1048579, 9, 262158, 1114115, 6, 327694, 1114115, 7, 393230, 1114115, 8, 458766, 1114115, 9, -589798, 1048579, 12, -524262, 1048579, 13, -589797, 1114115, 12, -524261, 1114115, 13, -720879, 1048579, 6, -655343, 1048579, 7, -589807, 1048579, 8, -524271, 1048579, 9, -720878, 1114115, 6, -655342, 1114115, 7, -589806, 1114115, 8, -524270, 1114115, 9, -2031594, 1769474, 11, -2031593, 1835010, 11, -2031596, 393219, 10, -1966060, 393219, 11, -2031595, 458755, 10, -1966059, 458755, 11, -3604454, 131073, 3, -3538918, 131073, 4, -3473383, 327681, 2, -3473382, 1048577, 8, -3604434, 393219, 4, -3538898, 393219, 5, -3473362, 393219, 6, -3407826, 393219, 7, -3604433, 458755, 4, -3538897, 458755, 5, -3473361, 458755, 6, -3407825, 458755, 7)
 
-[node name="Player" parent="." instance=ExtResource("1_dsca6")]
-position = Vector2(-93, -17)
-scale = Vector2(1.24165, 1.23514)
-
-[node name="poulet" parent="." instance=ExtResource("8_0xysn")]
+[node name="Poulet" parent="." instance=ExtResource("8_0xysn")]
 position = Vector2(229, -46)
+
+[node name="Player" parent="." instance=ExtResource("1_dsca6")]
